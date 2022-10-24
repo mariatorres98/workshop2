@@ -14,10 +14,7 @@ const Home = () => {
   return (
     <>
       <div className="">
-      <button type="submit" className="s" onClick={compra}>
-            {" "}
-            <p className="tituloVuelos">Buscar vuelos </p>{" "}
-          </button>
+
       </div>
     </>
   );
