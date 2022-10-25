@@ -1,6 +1,8 @@
 import React from 'react';
+import '../hearder/header.scss';
 
-import { useNavigate, Link } from 'react-router-dom'
+
+import { Link } from 'react-router-dom'
 
 import logo from '../../asset/logo.svg'
 
