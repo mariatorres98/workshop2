@@ -1,10 +1,7 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom';
-import comandante from '../../asset/douglas.png'
+import comandante from '../../asset/image-anousheh-ansari.png'
 import { useNavigate, Link } from 'react-router-dom'
-
-import '../crew/crew.scss'
-const Crew = () => {
+const Flight = () => {
   const navigate = useNavigate();
 
   const getCrew =()=>{
@@ -45,17 +42,16 @@ const getPilot =()=>{
         </ul>
 
         <div class="text__info">
-          <h1><span aria-hidden="true">Commander</span>Douglas Hurley</h1>
+          <h1><span aria-hidden="true">Flight Engineer</span> Anousheh Ansari</h1>
 
-          <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
-            and former NASA astronaut. He launched into space for the third time as
-            commander of Crew Dragon Demo-2.
+          <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+                        Ansari was the fourth self-funded space tourist, the first self-funded woman to
+                        fly to the ISS, and the first Iranian in space.
           </p>
         </div>
       </div>
     </div>
     </>
-    
   )
 }
-export default Crew;
+export default Flight;

@@ -9,6 +9,7 @@ import Navar from "../components/navar/Navar";
 import Planet from "../components/planet-destination/Planet";
 import Mission from "../components/planet-crew/Mission";
 import Launch from "../components/planet-technology/Launch";
+
 const Router = () => {
   const destination = [
     { name: "Moon" },
@@ -24,11 +25,13 @@ const Router = () => {
  ]
   return (
     <BrowserRouter>
+    
       <Routes>
         <Route element={<Navar />}>
           <Route path="/" element={<Home />} />
           <Route index element={<Home />} />
           <Route path="destination" element={<Destination />}>
+
             <Route
               path=":planetName"
               element={<Planet destination={destination} />}

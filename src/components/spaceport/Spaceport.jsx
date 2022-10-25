@@ -1,21 +1,19 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
-import cohete from "../../asset/image-launch-vehicle-portrait.jpg"
+import React from 'react'
+import cohete from "../../asset/image-spaceport-portrait.jpg"
 import '../technology/technology.scss'
 import { useNavigate, Link } from 'react-router-dom'
-const Technology = () => {
-  const navigate = useNavigate();
+const Spaceport = () => {
+    const navigate = useNavigate();
 
-  const getTechnology =()=>{
-    navigate('/technology');
-}
-const getSpaceport =()=>{
-    navigate('/spaceport');
-}
-const getSpacecapsule =()=>{
-    navigate('/spacecapsule');
-}
-
+    const getTechnology =()=>{
+        navigate('/technology');
+    }
+    const getSpaceport =()=>{
+        navigate('/spaceport');
+    }
+    const getSpacecapsule =()=>{
+        navigate('/spacecapsule');
+    }
   return (
     <>
       <main>
@@ -38,7 +36,7 @@ const getSpacecapsule =()=>{
         <h2 className="titulo"><span aria-hidden="true">03 </span>space launch 101</h2>
 
         <ul class="page__links">
-          <li><a class="dot active" onClick={getTechnology}>1</a></li>
+        <li><a class="dot active" onClick={getTechnology}>1</a></li>
           <li><a class="dot" onClick={getSpaceport}>2</a></li>
           <li><a class="dot" onClick={getSpacecapsule}>3</a></li>
         </ul>
@@ -57,6 +55,6 @@ const getSpacecapsule =()=>{
     </div>
   </main>
     </>
-  );
-};
-export default Technology;
+  )
+}
+export default Spaceport;

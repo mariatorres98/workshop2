@@ -1,12 +1,12 @@
 import React from 'react';
-import Router from './routes/Router';
+import Router2 from './routes/Router2';
 
 
 const App = () => {
 
     return (
         <>           
-            <Router/>
+            <Router2/>
            
         </>
     )

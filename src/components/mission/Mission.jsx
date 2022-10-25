@@ -1,24 +1,22 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom';
-import comandante from '../../asset/douglas.png'
+import comandante from '../../asset/image-mark-shuttleworth.png'
 import { useNavigate, Link } from 'react-router-dom'
 
-import '../crew/crew.scss'
-const Crew = () => {
-  const navigate = useNavigate();
+const Mission = () => {
+    const navigate = useNavigate();
 
-  const getCrew =()=>{
-    navigate('/crew');
-}
-const getMission =()=>{
-    navigate('/mission');
-}
-const getFlight =()=>{
-    navigate('/flight');
-}
-const getPilot =()=>{
-    navigate('/pilot');
-}
+    const getCrew =()=>{
+      navigate('/crew');
+  }
+  const getMission =()=>{
+      navigate('/mission');
+  }
+  const getFlight =()=>{
+      navigate('/flight');
+  }
+  const getPilot =()=>{
+      navigate('/pilot');
+  }
   return (
     <>
     <div class="crew__bg">
@@ -45,17 +43,16 @@ const getPilot =()=>{
         </ul>
 
         <div class="text__info">
-          <h1><span aria-hidden="true">Commander</span>Douglas Hurley</h1>
+          <h1><span aria-hidden="true">Mission Specialist</span>Mark Shuttleworth</h1>
 
-          <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
-            and former NASA astronaut. He launched into space for the third time as
-            commander of Crew Dragon Demo-2.
+          <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
+            the Linux-based Ubuntu operating system. Shuttleworth became the first South
+            African to travel to space as a space tourist.
           </p>
         </div>
       </div>
     </div>
     </>
-    
   )
 }
-export default Crew;
+export default Mission;
