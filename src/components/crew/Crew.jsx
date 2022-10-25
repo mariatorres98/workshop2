@@ -1,12 +1,21 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom';
+import Header from '../hearder/Header';
+
+import '../crew/crew.scss';
+import Content from './Content';
+
 
 const Crew = () => {
   return (
-    <><Outlet/>
-    <div>hola</div>
+    <>
+      <div>
+        <Header />
+        <Content />
+      </div>
+      <Outlet />
     </>
-    
+
   )
 }
 export default Crew;
