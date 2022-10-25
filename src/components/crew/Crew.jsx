@@ -1,10 +1,10 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom';
-import Header from '../hearder/Header';
 
-import '../crew/crew.scss';
+import Header from '../hearder/Header';
 import Content from './Content';
 
+import '../crew/crew.scss';
 
 const Crew = () => {
   return (
